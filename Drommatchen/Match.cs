@@ -8,20 +8,17 @@ public class Match
     // Properties — publik get, privat set
     public string Hemmalag
     {
-        get { return _hemmalag; }
-        private set { _hemmalag = value; }
+        // get och privat set för Hemmalag 
     }
 
     public string Bortalag
     {
-        get { return _bortalag; }
-        private set { _bortalag = value; }
+        // get och privat set för Bortalag
     }
 
     public string Datum
     {
-        get { return _datum; }
-        private set { _datum = value; }
+        // get och privat set för Datum
     }
 
     // Konstruktor

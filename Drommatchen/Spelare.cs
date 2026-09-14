@@ -8,20 +8,17 @@ public class Spelare
     // Properties — publik get, privat set
     public string Namn
     {
-        get { return _namn; }
-        private set { _namn = value; }
+        // Skapa get och privat set för Namn
     }
 
     public int Nummer
     {
-        get { return _nummer; }
-        private set { _nummer = value; }
+        // Skapa get och privat set för Nummer
     }
 
     public string Position
     {
-        get { return _position; }
-        private set { _position = value; }
+        // Skapa get och privat set för Position
     }
 
     // Konstruktor
