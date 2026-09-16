@@ -3,7 +3,7 @@ public class Match
     // Privata fält
     private string _hemmalag;
     private string _bortalag;
-    private string _datum;
+    private DateTime _datum;
 
     // Properties — publik get, privat set
     public string Hemmalag
@@ -20,22 +20,22 @@ public class Match
         private set;
     }
 
-    public string Datum
+    public DateTime Datum
     {
         // get och privat set för Datum
-        get;
-        private set;
+        get { return _datum;}
+        private set { _datum = value; }
     }
 
     // Pluspoäng om ni kommer på hur man kan minska ner koden med properties :)
 
     // Konstruktor
-    public Match(string hemmalag, string bortalag, string datum)
+    public Match(string hemmalag, string bortalag)
     {
         // TODO: tilldela de privata fälten
         _hemmalag = hemmalag;
         _bortalag = bortalag;
-        _datum = datum; 
+        _datum = DateTime.Now;
     }
 
     // Metod 1: skriv ut matchens lag och datum
