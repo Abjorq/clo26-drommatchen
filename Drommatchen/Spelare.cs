@@ -10,7 +10,7 @@ public class Spelare
     {
         // Skapa get och privat set för Namn
         get { return _namn; }
-        private set { value = _namn; }
+        private set { _namn = value; }
     }
 
     public int Nummer

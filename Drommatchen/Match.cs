@@ -33,6 +33,9 @@ public class Match
     public Match(string hemmalag, string bortalag, string datum)
     {
         // TODO: tilldela de privata fälten
+        _hemmalag = hemmalag;
+        _bortalag = bortalag;
+        _datum = datum; 
     }
 
     // Metod 1: skriv ut matchens lag och datum
