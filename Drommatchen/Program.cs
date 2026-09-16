@@ -8,3 +8,14 @@
 // TODO: Anropa match.Presentera()
 
 // TODO: Anropa match.AnnounceraMålskytt() med båda spelarna
+
+class Program
+{
+    
+    static void Main() {
+
+        
+        
+
+    }
+}

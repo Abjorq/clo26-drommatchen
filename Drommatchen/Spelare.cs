@@ -9,16 +9,22 @@ public class Spelare
     public string Namn
     {
         // Skapa get och privat set för Namn
+        get { return _namn; }
+        private set { value = _namn; }
     }
 
     public int Nummer
     {
         // Skapa get och privat set för Nummer
+        get { return _nummer; }
+        private set { _nummer = value; } 
     }
 
     public string Position
     {
         // Skapa get och privat set för Position
+        get { return _position; }
+        private set { _position = value; }
     }
 
     // Konstruktor
