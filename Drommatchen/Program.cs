@@ -16,6 +16,7 @@ class Program
     {
 
         Spelare spelare1 = new Spelare("Ivar the Great", 9, "Yttermittfältare");
+        Spelare spelare2 = new Spelare("Carl Gustav XII", 67, "Målvakt");
 
         Match match1 = new Match("Drömlagen", "FortniteElites");
 
