@@ -15,15 +15,16 @@ class Program
     static void Main()
     {
 
+        Spelare spelare1 = new Spelare("Ivar the Great", 9, "Yttermittfältare");
+
         Match match1 = new Match("Drömlagen", "FortniteElites");
 
-        Spelare spelare1 = new Spelare("Ivar the Great", 9, "Yttermittfältare");
 
         match1.Presentera();
 
         Console.WriteLine("---");
 
-        
+        match1.AnnounceraMålskytt(spelare1);
 
 
     }

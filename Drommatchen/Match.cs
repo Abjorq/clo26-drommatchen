@@ -23,13 +23,14 @@ public class Match
     public string Datum
     {
         // get och privat set för Datum
-        get { 
+        get
+        {
             return _datum;
-            }
-        private set 
-            {
+        }
+        private set
+        {
             _datum = value;
-            }
+        }
     }
 
     // Pluspoäng om ni kommer på hur man kan minska ner koden med properties :)
@@ -40,8 +41,8 @@ public class Match
         // TODO: tilldela de privata fälten
         _hemmalag = hemmalag;
         _bortalag = bortalag;
-        
-        
+
+
     }
 
     // Metod 1: skriv ut matchens lag och datum
@@ -49,7 +50,7 @@ public class Match
     {
         // TODO
         Console.WriteLine($"Dagens match: {_hemmalag} VS {_bortalag}");
-        
+
     }
 
     // Metod 2: skriv ut spelarens namn, nummer och position
@@ -57,5 +58,12 @@ public class Match
     {
         // TODO
         Console.WriteLine(spelare1);
+
     }
+
+    public override string ToString()
+    {
+        return $"{_hemmalag} VS {_bortalag}";
+    }
+
 }

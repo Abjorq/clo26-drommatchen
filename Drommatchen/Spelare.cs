@@ -35,4 +35,12 @@ public class Spelare
         _nummer = nummer;
         _position = position;
     }
+
+     public override string ToString()
+    {
+
+        return $"GOOLAZOOO! {_namn}  nummer: {_nummer}  {_position}";
+        
+    }
+    
 }
