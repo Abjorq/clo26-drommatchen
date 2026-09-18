@@ -38,8 +38,8 @@ public class Match
     public Match(string hemmalag, string bortalag)
     {
         // TODO: tilldela de privata fälten
-        Hemmalag = hemmalag;
-        Bortalag = bortalag;
+        _hemmalag = hemmalag;
+        _bortalag = bortalag;
         
         
     }
@@ -48,13 +48,14 @@ public class Match
     public void Presentera()
     {
         // TODO
-        Console.WriteLine($"Dagens match: {Hemmalag} VS {Bortalag}");
+        Console.WriteLine($"Dagens match: {_hemmalag} VS {_bortalag}");
         
     }
 
     // Metod 2: skriv ut spelarens namn, nummer och position
-    public void AnnounceraMålskytt(Spelare spelare)
+    public void AnnounceraMålskytt(Spelare spelare1)
     {
         // TODO
+        Console.WriteLine(spelare1);
     }
 }
