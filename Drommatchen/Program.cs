@@ -11,13 +11,20 @@
 
 class Program
 {
-    
-    static void Main() {
+
+    static void Main()
+    {
 
         Match match1 = new Match("Drömlagen", "FortniteElites");
 
+        Spelare spelare1 = new Spelare("Ivar the Great", 9, "Yttermittfältare");
+
         match1.Presentera();
+
+        Console.WriteLine("---");
+
         
+
 
     }
 }
