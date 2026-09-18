@@ -3,7 +3,7 @@ public class Match
     // Privata fält
     private string _hemmalag;
     private string _bortalag;
-    private DateTime _datum;
+    private string _datum;
 
     // Properties — publik get, privat set
     public string Hemmalag
@@ -20,11 +20,16 @@ public class Match
         private set;
     }
 
-    public DateTime Datum
+    public string Datum
     {
         // get och privat set för Datum
-        get { return _datum;}
-        private set { _datum = value; }
+        get { 
+            return _datum;
+            }
+        private set 
+            {
+            _datum = value;
+            }
     }
 
     // Pluspoäng om ni kommer på hur man kan minska ner koden med properties :)
@@ -33,15 +38,18 @@ public class Match
     public Match(string hemmalag, string bortalag)
     {
         // TODO: tilldela de privata fälten
-        _hemmalag = hemmalag;
-        _bortalag = bortalag;
-        _datum = DateTime.Now;
+        Hemmalag = hemmalag;
+        Bortalag = bortalag;
+        
+        
     }
 
     // Metod 1: skriv ut matchens lag och datum
     public void Presentera()
     {
         // TODO
+        Console.WriteLine($"Dagens match: {Hemmalag} VS {Bortalag}");
+        
     }
 
     // Metod 2: skriv ut spelarens namn, nummer och position

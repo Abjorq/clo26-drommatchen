@@ -14,7 +14,9 @@ class Program
     
     static void Main() {
 
-        
+        Match match1 = new Match("Drömlagen", "FortniteElites");
+
+        match1.Presentera();
         
 
     }
