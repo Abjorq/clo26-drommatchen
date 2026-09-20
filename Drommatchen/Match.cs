@@ -9,28 +9,23 @@ public class Match
     public string Hemmalag
     {
         // get och privat set för Hemmalag 
-        get;
-        private set;
+        get { return _hemmalag; }
+        private set { _hemmalag = value; }
     }
 
     public string Bortalag
     {
         // get och privat set för Bortalag
-        get;
-        private set;
+        get { return _hemmalag; }
+        private set { _hemmalag = value; }
+
     }
 
     public string Datum
     {
         // get och privat set för Datum
-        get
-        {
-            return _datum;
-        }
-        private set
-        {
-            _datum = value;
-        }
+        get { return _datum; }
+        private set { _datum = value; }
     }
 
     // Pluspoäng om ni kommer på hur man kan minska ner koden med properties :)

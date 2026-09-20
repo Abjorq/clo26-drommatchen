@@ -5,6 +5,8 @@ public class Spelare
     private int _nummer;
     private string _position;
 
+    private int _mål;
+
     // Properties — publik get, privat set
     public string Namn
     {
@@ -17,7 +19,15 @@ public class Spelare
     {
         // Skapa get och privat set för Nummer
         get { return _nummer; }
-        private set { _nummer = value; } 
+        private set {
+
+            if (_nummer == 67)
+            {
+                Console.WriteLine("Titta, han bär nummer 67, brainrot!");
+                _nummer = value;
+            }
+
+        }
     }
 
     public string Position
@@ -25,6 +35,18 @@ public class Spelare
         // Skapa get och privat set för Position
         get { return _position; }
         private set { _position = value; }
+    }
+
+    public int Mål
+    {
+        get
+        {
+            return _mål;
+        }
+        private set
+        {
+            _mål = value;
+        }
     }
 
     // Konstruktor
@@ -36,11 +58,11 @@ public class Spelare
         _position = position;
     }
 
-     public override string ToString()
+    public override string ToString()
     {
 
         return $"GOOLAZOOO! {_namn}  nummer: {_nummer}  {_position}";
-        
+
     }
-    
+
 }
