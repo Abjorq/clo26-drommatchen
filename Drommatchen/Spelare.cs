@@ -28,8 +28,7 @@ public class Spelare
         get { return _position; }
         private set
         {
-            if (Position == "Målvakt")
-            
+
             _position = value;
         }
     }
