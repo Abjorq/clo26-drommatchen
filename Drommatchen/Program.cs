@@ -18,15 +18,13 @@ class Program
         Spelare spelare1 = new Spelare("Ivar the Great", 9, "Yttermittfältare");
         Spelare spelare2 = new Spelare("Carl Gustav XII", 67, "Målvakt");
 
-        Match match1 = new Match("Drömlagen", "FortniteElites");
+        Match match1 = new Match("Drömlagent", "FortniteElites");
 
 
         match1.Presentera();
-
-        Console.WriteLine("---");
-
+        Console.WriteLine();
         match1.AnnounceraMålskytt(spelare1);
-
+        match1.AnnounceraMålskytt(spelare2);
 
     }
 }
