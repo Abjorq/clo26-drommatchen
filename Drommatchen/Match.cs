@@ -52,11 +52,15 @@ public class Match
 
     // Metod 2: skriv ut spelarens namn, nummer och position
     // Ta objekt från spelare1 i Mainklass, används i utskriften i Main
-    public void AnnounceraMålskytt(Spelare spelare1)
+    public void AnnounceraMålskytt(Spelare enSpelare)
     {
         // TODO
-        
-        Console.WriteLine(spelare1);
+        Console.WriteLine(enSpelare);
+
+        if (enSpelare.Position == "Målvakt")
+        {
+            Console.WriteLine("Jag kan inte tro mina ögon! Målvakten gjorde mål!");
+        }
 
     }
 
