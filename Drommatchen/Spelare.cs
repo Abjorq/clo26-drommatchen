@@ -19,22 +19,19 @@ public class Spelare
     {
         // Skapa get och privat set för Nummer
         get { return _nummer; }
-        private set {
-
-            if (_nummer == 67)
-            {
-                Console.WriteLine("Titta, han bär nummer 67, brainrot!");
-                _nummer = value;
-            }
-
-        }
+        private set { _nummer = value; }
     }
 
     public string Position
     {
         // Skapa get och privat set för Position
         get { return _position; }
-        private set { _position = value; }
+        private set
+        {
+            if (Position == "Målvakt")
+            
+            _position = value;
+        }
     }
 
     public int Mål
@@ -61,7 +58,9 @@ public class Spelare
     public override string ToString()
     {
 
-        return $"GOOLAZOOO! {_namn}  nummer: {_nummer}  {_position}";
+        //Skapa en toStringmetod, (fick utskrift i terminal "Spelare" av konstruktorn och inte dess parameterar)
+
+        return $"GOOLAZOOO! {Namn}  #{Nummer}  {Position}";
 
     }
 

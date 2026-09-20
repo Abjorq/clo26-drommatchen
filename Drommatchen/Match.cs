@@ -31,34 +31,38 @@ public class Match
     // Pluspoäng om ni kommer på hur man kan minska ner koden med properties :)
 
     // Konstruktor
-    public Match(string hemmalag, string bortalag)
+    public Match(string hemmalag, string bortalag, string datum)
     {
         // TODO: tilldela de privata fälten
         _hemmalag = hemmalag;
         _bortalag = bortalag;
+        _datum = datum;
 
 
     }
 
     // Metod 1: skriv ut matchens lag och datum
-    public void Presentera()
+    public void Presentera(Match match1)
     {
         // TODO
-        Console.WriteLine($"Dagens match: {_hemmalag} VS {_bortalag}");
+        //Console.WriteLine($"Dagens match: {_hemmalag} VS {_bortalag}");
+        Console.WriteLine(match1);
 
     }
 
     // Metod 2: skriv ut spelarens namn, nummer och position
+    // Ta objekt från spelare1 i Mainklass, används i utskriften i Main
     public void AnnounceraMålskytt(Spelare spelare1)
     {
         // TODO
+        
         Console.WriteLine(spelare1);
 
     }
 
     public override string ToString()
     {
-        return $"{_hemmalag} VS {_bortalag}";
+        return $"{Hemmalag} VS {Bortalag} - {Datum}";
     }
 
 }
