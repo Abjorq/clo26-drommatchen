@@ -59,7 +59,7 @@ public class Match
 
         if (enSpelare.Position == "Målvakt")
         {
-            Console.WriteLine("Jag kan inte tro mina ögon! Målvakten gjorde mål!");
+            Console.WriteLine($"Jag kan inte tro mina ögon! Målvakten gjorde mål");
         }
 
     }

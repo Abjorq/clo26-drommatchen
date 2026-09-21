@@ -32,6 +32,7 @@ public class Spelare
         }
     }
 
+    //Ny property för VG
     public int Mål
     {
         get { return _mål; }
@@ -39,6 +40,8 @@ public class Spelare
     }
 
     // Konstruktor
+
+    //Lade till int mål i konstruktor
     public Spelare(string namn, int nummer, string position, int mål)
     {
         // TODO: tilldela de privata fälten
@@ -48,12 +51,17 @@ public class Spelare
         _mål = mål;
     }
 
-    bool ÄrMatchHjälte(int mål)
+    //Metod för att se om en spelare blir matchhälte, bara om spelaren gör mer än ett mål.
+
+    public bool ÄrMatchHjälte()
     {
-        if (_mål > 1){
+        if (Mål > 1)
+        {
+            Console.WriteLine($"Matchhjälte för matchen är {Namn} med {Mål} mål");
             return true;
-            Console.WriteLine($"Och dagens matchhjälte med {_mål} är {_namn}");
+
         }
+        Console.WriteLine($"Tyvärr inte matchhjälte för denna gång, {Namn} med {Mål} mål");
         return false;
     }
 
@@ -61,8 +69,6 @@ public class Spelare
     {
 
         //Skapa en toStringmetod, (fick utskrift i terminal "Spelare" av konstruktorn och inte dess parameterar)
-
-        
 
         return $"GOOLAZOOO! {Namn}  #{Nummer}  {Position}";
 
