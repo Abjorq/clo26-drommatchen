@@ -50,11 +50,11 @@
 
 ### Vad vi lade till
 
-> Lade till Mål som en property för att kunna följa vilken spelare som gjort mål och som även koras till matchhjälte. 
+> Lade till Mål som en property och _mål som medlemsvariabel, ÄrMatchHjälte som metod - för att kunna följa vilken spelare som gjort mål och som även koras till matchhjälte. Utskriften visar vilken spelare som gjort fler än två mål och då koras till matchhjälte, den eller de som gjort mindre än 2 blev tyvärr inte matchhjälte denna gång. 
 
 ### Varför vi löste det såhär
 
-> 
+> Valde att lösa VG uppgiften genom att lägga till if sats i nya metoden ÄrMatchHjälte, hade även kunnat göra det i main-klassen men föredrar att ha den renare från kod. Nya metod var en bool, om ett värde uppfyller kraven returnerar den true med en sträng och false om det inte uppfylls med en annan sträng. 
 
 ---
 
