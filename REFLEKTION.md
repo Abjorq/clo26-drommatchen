@@ -1,9 +1,9 @@
 # Reflektion
 
-**Namn:**  
-**Kurs:**  
-**Uppgift:**  
-**Datum:**  
+**Namn: Anton Björquist**  
+**Kurs:Grundläggande OOP**  
+**Uppgift:Inlämning 1**  
+**Datum:2026-09-21**  
 
 ---
 
@@ -14,7 +14,7 @@
 
 ## Vad var svårast att lösa?
 
-*Var fastnade du? Vad tog längre tid än du trodde — och hur kom du vidare?*
+*Det som tog längst tid var att förstå hur jag skulle använda mig av skapade projekt i Mainklassen och använda dem som parameter och fält i metoder, samt hur variabler och metoder mellan klasserna ärver av varandra.*
 
 > 
 
@@ -22,8 +22,7 @@
 
 ## Hur fungerade samarbetet i gruppen?
 
-*Vad fungerade bra? Vad var svårt? Hur delade ni upp arbetet?*  
-*(Individuell uppgift? Hoppa över den här.)*
+*Arbetade själv på projektet. Det mest fungerade bra, inga problem med Git Bash.*
 
 > 
 
@@ -31,6 +30,6 @@
 
 ## Om du fick göra om det — vad hade du gjort annorlunda?
 
-*Tänk på din lösning, din struktur, eller hur ni jobbade. Vad skulle du ändra?*
+*Förmodligen gett en mer egen touch på projektet och leka runt med koden.*
 
 > 
