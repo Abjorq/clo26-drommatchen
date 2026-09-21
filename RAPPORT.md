@@ -63,5 +63,26 @@
 Klistra in utskriften från `git log --oneline` här:
 
 ```
-[klistra in här]
+49a6006 (HEAD -> main, origin/main, origin/HEAD) wrote RAPPORT.md
+b1edfb9 Added bool to ÄrMatchHjälte method in Spelare.cs, along with spelareobject in Program.cs
+e126ce3 added method ÄrMatchHjälte and its contents
+e044610 added text to Rapport och Reflektion
+30062a3 added custom output if goalscorer is a keeper
+f93cd11 swapped to properties as fields in ToString-Method
+576ac5a added date of match to the output
+27a17a3 added some memorynotes
+267c510 added _mål in Spelare.cs aa variable and its property
+1f4c822 Added spelare2 as second object
+6e339b3 successfully run program with output
+1a41fc3 Added toString to Match.cs and Spelare.cs
+1c66f6c created object spelare1
+8a747bd added object spelare1 to method AnnounceraMålskytt
+d050bea creating an instance
+52b096a added Datetime as a field and to constructor
+3773d60 added constructor fields in spelare.cs
+c94a547 skrivit konstrukor i klass match.cs
+1d46aad added encapsulation to properties in match.cs and spelare.cs
+35825ed Solutionfile added at root
+34de7d5 refactor: gör property-kroppar tomma — studerande implementerar själva
+66f4917 init: starterrepo för Drömmatchen (Inlämning 1)
 ```
