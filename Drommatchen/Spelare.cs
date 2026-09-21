@@ -4,7 +4,6 @@ public class Spelare
     private string _namn;
     private int _nummer;
     private string _position;
-
     private int _mål;
 
     // Properties — publik get, privat set
@@ -35,29 +34,35 @@ public class Spelare
 
     public int Mål
     {
-        get
-        {
-            return _mål;
-        }
-        private set
-        {
-            _mål = value;
-        }
+        get { return _mål; }
+        private set { _mål = value; }
     }
 
     // Konstruktor
-    public Spelare(string namn, int nummer, string position)
+    public Spelare(string namn, int nummer, string position, int mål)
     {
         // TODO: tilldela de privata fälten
         _namn = namn;
         _nummer = nummer;
         _position = position;
+        _mål = mål;
+    }
+
+    bool ÄrMatchHjälte(int mål)
+    {
+        if (_mål > 1){
+            return true;
+            Console.WriteLine($"Och dagens matchhjälte med {_mål} är {_namn}");
+        }
+        return false;
     }
 
     public override string ToString()
     {
 
         //Skapa en toStringmetod, (fick utskrift i terminal "Spelare" av konstruktorn och inte dess parameterar)
+
+        
 
         return $"GOOLAZOOO! {Namn}  #{Nummer}  {Position}";
 

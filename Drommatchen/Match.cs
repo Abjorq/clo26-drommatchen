@@ -51,7 +51,7 @@ public class Match
     }
 
     // Metod 2: skriv ut spelarens namn, nummer och position
-    // Ta objekt från spelare1 i Mainklass, används i utskriften i Main
+    // Använd metod på det matchobjekt om spelare gjort mål med argument spelareobjekt.
     public void AnnounceraMålskytt(Spelare enSpelare)
     {
         // TODO
